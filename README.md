@@ -1,6 +1,7 @@
 # QoolTester
 A lightweight management tool for manual testing.
-![Local image](./assets/icons/app.png)
+
+![image info](./assets/icons/app.png)
 
 Welcome to the manual page. QoolTester is a lightweight management tool for manual testing, which allows user to create, modify and save test cases as project file.
 
@@ -33,8 +34,8 @@ Select one test case, then use the utilities at the buttom right corner. Test st
 Under tree view navigate using arrow keys, press `Space` to display its content.
 
 ## Screenshots
-![Local image](./assets/documents/testcase.png)
-![Local image](./assets/documents/passfail.png)
-![Local image](./assets/documents/report.png)
+![image info](./assets/documents/testcase.PNG)
+![image info](./assets/documents/passfail.PNG)
+![image info](./assets/documents/report.PNG)
 
 
