@@ -1,0 +1,244 @@
+<Root>
+    <Node>
+        <Info UID="0" Name="Pre-Flight Testing" Level="1" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="1" Name="Visual Inspection" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="2" Name="Battery Health Check" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="3" Name="Propulsion System Check" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="4" Name="Sensor Calibration" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="5" Name="Firmware updates" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="6" Name="Ground Testing" Level="1" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="7" Name="POST" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment="POST: Power-On Self-Test"/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="8" Name="Motor and Propeller" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Fail" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="9" Name="Communication" Level="2" isTestCase="1" TestType="Smoke Test" TestResult="Pass" Comment="Verify that the drone can establish a stable connection with the Ground Control Station (GCS)."/>
+        <TestCase>
+            <StepIn>send out connection requests in invalid frequency sections
+</StepIn>
+            <StepOut>
+Connection to drone is not established
+</StepOut>
+            <StepIn>send out the valid frequency, but:
+    1. with incomplete message
+    2. with operation command before initialization
+</StepIn>
+            <StepOut>Drone is not initialized, nothing to do</StepOut>
+            <StepIn>send initialization protocal:
+    - connect
+    - disconnect
+    - connect
+</StepIn>
+            <StepOut>Reconnection to drone is working
+</StepOut>
+            <StepIn>- send all commands to drone, respectively
+- wait and capture response signals
+</StepIn>
+            <StepOut>- Drone responded all commands back to GCS correctly
+- Drone behaves as expected according to the commands</StepOut>
+            <StepIn>Test the exchange data rate and signal quality in various distances:
+    - 100 Meter
+    - 1 Kilometer
+    - 2 Kilometer
+</StepIn>
+            <StepOut>- exchange rate of data remains consistent
+- max. drop of signal intensity is no greater than 5%</StepOut>
+            <StepIn>Let drone fly within the magnetic test field:
+    - test essential commands
+    - return to base
+</StepIn>
+            <StepOut>Drone could still maneuver and execute requests well</StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="31" Name="Sensor" Level="2" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="10" Name="GPS" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="32" Name="Barometer" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="33" Name="Camera" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Retest" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="11" Name="Failsafe Systems" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Fail" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="18" Name="Stress Testing" Level="1" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="19" Name="Extreme Conditions" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="20" Name="Battery Endurance" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="21" Name="Obstacle Avoidance" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="22" Name="Hight-Speed Test" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="12" Name="Flight Testing" Level="2" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="13" Name="Hover" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn>dsad</StepIn>
+            <StepOut>dsadsa</StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="14" Name="Maneuverability" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Retest" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="15" Name="Range Test" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="16" Name="Autonomous Flight" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="17" Name="Payload Test" Level="3" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="23" Name="Post-Flight Analysis" Level="1" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="24" Name="Flight Data Analysis" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="25" Name="Physical Inspection" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="26" Name="System Diagnostics" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="27" Name="Maintenance" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="28" Name="Compliance and Safety Testing" Level="1" isTestCase="0" TestType="Acceptance Test" TestResult="Neutral" Comment=""/>
+    </Node>
+    <Node>
+        <Info UID="29" Name="Regulatory Compliance" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+    <Node>
+        <Info UID="30" Name="Safety Testing" Level="2" isTestCase="1" TestType="Acceptance Test" TestResult="Pass" Comment=""/>
+        <TestCase>
+            <StepIn></StepIn>
+            <StepOut></StepOut>
+        </TestCase>
+    </Node>
+</Root>
