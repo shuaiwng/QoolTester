@@ -35,6 +35,7 @@ Under tree view navigate using arrow keys, press `Space` to display its content.
 
 ## Screenshots
 ![image info](./assets/documents/testcase.PNG)
+![image info](./assets/documents/testplan.png)
 ![image info](./assets/documents/passfail.PNG)
 ![image info](./assets/documents/report.PNG)
 
